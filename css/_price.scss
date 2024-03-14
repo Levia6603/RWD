@@ -1,0 +1,127 @@
+/*header*/
+.banner {
+  .container {
+    min-height: 1000px;
+    @include mobile {
+      min-height: 731px;
+    }
+  }
+  h3 {
+    align-self: flex-end;
+    max-width: 636px;
+    padding-top: 80px;
+    @include mobile {
+      max-width: 257px;
+      padding-top: 64px;
+    }
+  }
+}
+.decogroup {
+  @include mobile {
+    align-self: stretch;
+  }
+}
+/*section1*/
+.price-album {
+  margin-top: 5rem;
+}
+.price-card {
+  width: 636px;
+  height: 318px;
+  border: 1px solid #525252;
+  border-radius: 1rem;
+  .about {
+    height: 254px;
+    border-bottom: 1px solid #525252;
+    h4 {
+      margin-bottom: 12px;
+    }
+    ul {
+      list-style: disc inside;
+    }
+    li {
+      line-height: 1.5;
+    }
+  }
+  div {
+    padding: 20px 32px;
+  }
+  img {
+    width: 16px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 900;
+  }
+  a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .sub {
+    font-weight: 400;
+    color: #919191;
+  }
+}
+/*section2*/
+.terms {
+  .container {
+    @include mobile {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+}
+.terms-album {
+  gap: 40px;
+  width: 856px;
+  @include mobile {
+    width: 100%;
+  }
+}
+.terms-card {
+  padding-bottom: 40px;
+  border-bottom: 1px solid;
+  p {
+    padding-top: 24px;
+    font-size: 32px;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
+/*section4*/
+.qa {
+  .container {
+    @include mobile {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
+.qa-album {
+  gap: 16px;
+  width: 856px;
+  @include mobile {
+    width: 100%;
+  }
+}
+.qa-card {
+  gap: 20px;
+  padding: 20px 40px;
+  border: 1px solid #525252;
+  border-radius: 1rem;
+  h5 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  @include mobile {
+    padding: 20px;
+  }
+}
+.hide {
+  margin-top: 1rem;
+}
